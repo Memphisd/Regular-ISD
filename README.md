@@ -20,6 +20,9 @@ This folder contains the code for the numerical optimization of
 Additionally, it includes the computation of the runtime exponents of all Regular-ISD algorithms when rounding issues 
 are resolved and a comparison to the case without resolving rounding issues.
 
+The folder also contains CSV files for all regular-ISD algorithms (before and after resolving rounding issues) stating the optimal 
+parameters for all combinations of the rate and weight.
+
 The code requires a standard python3 kernel in jupyter. You might have to install missing packages via pip.
 
 ## Concrete numbers

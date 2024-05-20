@@ -1,7 +1,7 @@
 # Regular-ISD
 Code accompanying publication *Not Just Regular Decoding: Asymptotics and Improvements of Regular Syndrome Decoding Attacks*
 
-In paricular this repository contains the code for:
+In particular this repository contains the code for:
 - Numerical optimization of the asymptotic runtime and memory exponents of regular-ISD algorithms and CCJ algorithms
 - Estimator for concrete complexity of regular-ISD and CCJ algorithms
 - Proof of concept implementations for Perm and Enum

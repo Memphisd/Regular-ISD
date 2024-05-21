@@ -1,7 +1,8 @@
-#partial Gaussian elimination
+#Partial Gaussian Elimination (PGE) on input (H, s)
+#H is the r x n parity-check matrix, s is the syndrome
+#ell is the parameter for PGE
+#The code is generic and works for any finite field
 def PGE(n, r, ell, H, s):
-
-#copy_H = copy(H);
 
     red_s = copy(s);
 
@@ -28,7 +29,7 @@ def PGE(n, r, ell, H, s):
             red_s[r-1-i,:] = red_s[j,:];
             red_s[j,:] = tmp;
 
-            #scale row so that you have the pivot
+            #scale row 
             scale_coeff = H[r-1-i,n-1-i]^-1;
             H[r-1-i,:] = scale_coeff*H[r-1-i,:];
             red_s[r-1-i,:] = scale_coeff*red_s[r-1-i,:];

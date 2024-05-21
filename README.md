@@ -73,5 +73,10 @@ your sage installation, as for example the python3 interpreter sage brings with 
 This folder contains proof of concept implementations of Perm and Enum. It allows to verify the theoretical predictitions
 against the experimentally obtained values.
 
-The corresponding notebooks `sim_EnumBased.ipynb` and `sim_PermBased.ipynb` require a SageMath kernel.
+We provide three notebooks:
+- `sim_PermBased.ipynb`: simulates Perm-Based Regular ISD, measuring a) the probability that H' as full rank, b) the probability that a random regular permutation places an information set in the leftmost k positions, c) the success probability. The latter value is compared with the theoretical estimates provided in the paper (both neglecting and taking into account rounding issues).
+- `sim_EnumBased.ipynb`: simulates Enum-Based Regular ISD, measuring a) the success probability, b) the average number of collisions. Both values are compared with the theoretical estimates provided in the paper (taking into account rounding issues)
+- `sim_EnumBased_NumColissions.ipynb`: simulates Enum-Based Regular ISD, measuring the minimum, average and maximum number of collisions. The code considers two different regimes: I) several code rates, all greater than 1 - 1 / ( e ln(2) ), and weight set according to the uniqueness bound, II) code rate less than 1 - 1 / ( e ln(2) ), different values of w. The measured values are compared with the value theoretical estimates provided in the paper 
+
+The notebooks require a SageMath kernel.
 

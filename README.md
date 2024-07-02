@@ -18,6 +18,7 @@ The different parts of the code might contain individual dependencies, which are
 You will require a python3 installation with some specific packages. To install the necessary packages you can run
 
 <pre translate="no" dir="ltr" is-upgraded="">
+python -m venv .venv && source .venv/bin/activate
 pip3 install -r requirements.txt
 </pre>
 

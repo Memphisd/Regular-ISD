@@ -30,7 +30,7 @@ To open these files you require the web application *jupyter*, which you can ins
 pip3 install jupyterlab
 </pre>
 
-The install a jupyter kernel for the virtual python environment you installed the packages for via
+Then install a jupyter kernel for the virtual python environment you installed the packages for via
 
 <pre translate="no" dir="ltr" is-upgraded="">
 pip3 install ipykernel
